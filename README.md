@@ -26,9 +26,12 @@ A password should have at least one special character ( #, $ or @ ).
 
 ### Registration should throw an error when an invalid password is submitted
 > **When** an user registers with his mail "sample@mail.com" and the password "abc123" 
+>
 > **Then** the following error is thrown "**Unsecured password submitted.**"
 
 ### Change user account's password should throw an error when an invalid password is submitted
 > **Given** an already registered user "sample@mail.com" 
+>
 > **When** the user "sample@mail.com" changes his password to "abc123" 
+>
 > **Then** the following error is thrown "**Unsecured password submitted.**"
