@@ -4,4 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="_NCrunch_Account.Domain\**" />
+    <EmbeddedResource Remove="_NCrunch_Account.Domain\**" />
+    <None Remove="_NCrunch_Account.Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Account.Domain.v3.ncrunchsolution" />
+  </ItemGroup>
+
 </Project>
