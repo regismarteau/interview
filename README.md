@@ -6,11 +6,11 @@ I want to strengthen private access to my application
 In order to avoid user account hacking
 
 ## General rules
-A password should be at least 8 characters long.
-A password should have at least one uppercase letter.
-A password should have at least one lowercase letter.
-A password should have at least one number.
-A password should have at least one special character ( #, $ or @ ).
+- A password should be at least 8 characters long.
+- A password should have at least one uppercase letter.
+- A password should have at least one lowercase letter.
+- A password should have at least one number.
+- A password should have at least one special character ( #, $ or @ ).
 
 ### Valid examples
 
