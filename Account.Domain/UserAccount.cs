@@ -4,9 +4,9 @@ namespace Account.Domain
 {
     public class UserAccount
     {
-        public UserAccount(Guid id, string email, string password)
+        public UserAccount(string email, string password)
         {
-            this.Id = id;
+            this.Id = Guid.NewGuid();
             this.Email = email;
             this.Password = password;
         }

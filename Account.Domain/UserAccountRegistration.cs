@@ -13,9 +13,9 @@ namespace Account.Domain
         }
 
 
-        public async Task Register(Guid id, string email, string password)
+        public async Task Register(string email, string password)
         {
-            UserAccount userAccount = new UserAccount(id, email, password);
+            UserAccount userAccount = new UserAccount(email, password);
             await this.userAccountRepository.Save(userAccount);
         }
     }
