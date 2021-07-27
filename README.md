@@ -6,8 +6,8 @@ I want to strengthen private access to my application
 In order to avoid user account hacking
 
 ## General rules
-- A password should be at least 8 characters long.
-- A password should not have two same characters in a row.
+- A password should not have two same characters in a row regardless of the character case.
+- It should not have three same characters in the whole password regardless of the character case.
 
 ### Valid examples
 
@@ -16,9 +16,9 @@ In order to avoid user account hacking
 
 ### Invalid examples
 - AAzerty123
-- abc
-- Azertyy123
-- Azerty1233
+- Aazerty123
+- AzerAtyA123
+- AzeratyA123
 
 ## Acceptance tests
 
