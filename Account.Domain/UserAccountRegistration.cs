@@ -12,11 +12,20 @@ namespace Account.Domain
             this.userAccountRepository = userAccountRepository;
         }
 
-
         public async Task Register(string email, string password)
         {
-            UserAccount userAccount = new UserAccount(email, password);
-            await this.userAccountRepository.Save(userAccount);
+            var userAccount = new UserAccount(email, password);
+
+            await userAccountRepository.Save(userAccount);
+        }
+
+        public async Task ChangePassword(Guid userId, string newPassword)
+        {
+            var userAccount = await userAccountRepository.Get(userId);
+
+            userAccount.ChangePassword(newPassword);
+
+            await userAccountRepository.Save(userAccount);
         }
     }
 }
