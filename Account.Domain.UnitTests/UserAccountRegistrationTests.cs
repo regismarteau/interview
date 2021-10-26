@@ -8,10 +8,11 @@ namespace Account.Domain.UnitTests
     [TestClass]
     public class UserAccountRegistrationTests
     {
-        private readonly IUserAccountRepository userAccountRepository;
-        private readonly UserAccountRegistration userAccountRegistration;
+        private IUserAccountRepository userAccountRepository;
+        private UserAccountRegistration userAccountRegistration;
 
-        public UserAccountRegistrationTests()
+        [TestInitialize]
+        public void Initialize()
         {
             userAccountRepository = Substitute.For<IUserAccountRepository>();
             userAccountRegistration = new UserAccountRegistration(userAccountRepository);
