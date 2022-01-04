@@ -1,12 +1,12 @@
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace Account.Domain.UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class UserAccountTests
     {
-        [TestMethod]
+        [Test]
         public void The_password_of_an_user_account_could_be_changed()
         {
             UserAccount userAccount = new UserAccount("my_custom_mail@email.com", "@Azerty123");
